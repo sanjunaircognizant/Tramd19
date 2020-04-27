@@ -1,0 +1,27 @@
+
+.titleTextVerify{
+    text-transform: uppercase;
+    margin-top: 2rem;
+    font-size: 1.5rem;
+}
+
+.verify-outer-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    margin: 2rem;;
+}
+
+
+.verifySearch{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    width: 100%;
+    flex-direction: column;
+    height: 15rem;
+    padding: 1rem;
+    border: 1px soid #444;
+    margin: 1rem 0;
+}

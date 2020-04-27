@@ -1,0 +1,39 @@
+.landTitleText{
+    font-size: 5rem;
+    align-self: center;
+    align-items: center;
+    display: flex;
+    color: #e84118;
+    margin: 0 1rem;
+    font-feature-settings: "frac";
+    font-variant-numeric: diagonal-fractions;
+    z-index: 999;
+}
+
+.landTitleDesc{
+    font-size: 1.1rem;
+    color: #666;
+    z-index: 999;
+}
+
+.landIcon1{
+    position: absolute;
+    font-size: 16rem !important;
+    color: #efefef;
+    left: -8rem;
+}
+
+.landIcon2{
+    position: absolute;
+    font-size: 16rem !important;
+    color: #efefef;
+    right: -8rem;
+   
+}
+
+.landBox{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2rem;
+}

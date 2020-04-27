@@ -1,0 +1,7 @@
+applications:
+- name: Tramd19be
+  memory: 1.7G
+  route: tramd19be-appreciative-ratel-lg.eu-gb.mybluemix.net
+  path: ./target/tramd19.jar
+  env:
+    SPRING_PROFILES_ACTIVE: cloud,mysql

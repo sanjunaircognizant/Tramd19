@@ -1,0 +1,91 @@
+Login: · Url -> http://localhost:8080/authenticate
+
+· Request Parameter -> JwtRequest
+
+properties of JwtRequest -> username,password
+
+· Return -> JWT token
+
+For testing, we have created register api · Url -> http://localhost:8080/register
+
+· Request Parameter -> Users
+
+Properties of Users -> username,password
+
+· Return value -> registered user
+
+Riders Page
+
+1) Submit Rider Form o Url -> https://localhost:8080/riders
+
+o Request Parameter -> Riders
+
+· interState - boolean
+
+· sourceState - String
+
+· sourceDistrict - String
+
+· destinationState - String
+
+· destinationDistrict - String
+
+· vehicleNumber - String
+
+· purpose - String
+
+· mobileNum - String
+
+· approxKms - String
+
+· purposeDesc - String
+
+· approvalMethod - String
+
+· requestedDate - String
+
+o Return -> created Riders object
+
+2) Validating status o Url -> https://localhost:8080/riders/verify/{id}
+
+o Path Variable -> String Id
+
+o Return Value -> Riders object
+
+Officials Page
+
+1) Getting details for official dashboard · Url -> https://localhost:8080/officials/{currentDate}
+
+· Path Variable -> String currentDate
+
+· Return Value -> Officials object
+
+Properties of Officials
+
+Ø date - LocalDate
+
+Ø riderCounts -> Map<String, Integer>
+
+Ø mostUsedRoute -> RiderRouteCounts
+
+Ø riderRouteCount -> RiderRouteCounts
+
+Properties of RiderRouteCounts
+
+o sourceState
+
+o sourceDistrict
+
+o destinationState
+
+o destinationDistrict
+
+o riderRouteCount
+
+Ø manualApprovalRiders -> List<Riders>
+
+2) confirming Approval/Reject · Url -> https://localhost:8080/officials/confirmRiderStatus/{id}/{status}
+
+· Path Variable -> String id, String status(Approve/Reject)
+
+· Return value -> updated Riders
